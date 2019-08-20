@@ -1,0 +1,14 @@
+package P1;
+
+public class TestEx {
+	void TestEx() {
+		System.out.println("1st");
+	}
+	void TestEx(int n) {
+		System.out.println("2nd");
+	}
+	public static void main(String[] args) {
+		TestEx t=new TestEx();
+		t.TestEx();
+	}
+}

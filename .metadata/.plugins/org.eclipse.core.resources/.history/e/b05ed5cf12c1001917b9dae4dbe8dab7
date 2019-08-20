@@ -1,0 +1,26 @@
+package P1;
+
+abstract class m {
+	abstract void show();
+	 void m1() throws RuntimeException{
+		System.out.println("m2");
+		
+	}
+}
+public class TestEx extends m{
+	void show() {
+		
+	}
+	 void m1() throws RuntimeException{
+		System.out.println("m1");
+	
+	}
+	
+
+	public static void main(String[ ] args) {
+		  TestEx h = new TestEx(); 
+	    h.m1();
+	   // m n=new m();
+	   // n.m1();
+	    } 
+}

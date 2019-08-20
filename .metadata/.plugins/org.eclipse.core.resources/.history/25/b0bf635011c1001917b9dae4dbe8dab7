@@ -1,0 +1,22 @@
+package P1;
+
+class m {
+	Object m1() {
+		System.out.println("m2");
+		return 'a';
+	}
+}
+public class TestEx extends m{
+	String m1(){
+		System.out.println("m1");
+		return "abc";
+	}
+	
+
+	public static void main(String[ ] args) {
+		  TestEx h = new TestEx(); 
+	    h.m1();
+	    m n=new m();
+	    n.m1();
+	    } 
+}

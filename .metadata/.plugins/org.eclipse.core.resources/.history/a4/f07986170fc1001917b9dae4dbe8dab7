@@ -1,0 +1,19 @@
+package P1;
+
+public class TestEx extends m{
+	void m1(){
+		System.out.println("m1");
+	}
+
+	public static void main(String[ ] args) {
+		  TestEx h = new TestEx(); 
+	    h.m1();
+	    m n=new m();
+	    n.m1();
+	    } 
+}
+class m {
+	void m1() {
+		System.out.println("m2");
+	}
+}

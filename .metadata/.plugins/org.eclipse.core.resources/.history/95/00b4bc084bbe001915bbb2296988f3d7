@@ -1,0 +1,15 @@
+package P1;
+
+public class Example1 {
+
+	static void Example1(String x) {
+		System.out.println();
+	}
+	static void Example1(int i) {
+		System.out.println();
+	}
+	
+public static void main(String[] args) {
+	Example1(null);
+}
+}
