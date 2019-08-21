@@ -1,0 +1,17 @@
+package array;
+
+import java.util.Scanner;
+
+public class Panagram {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the String:-");
+		String s=sc.nextLine();
+		boolean rs=isPanagram(s);
+		if(rs)
+			System.out.println("panagram");
+		else
+			System.out.println("not");
+	}
+}

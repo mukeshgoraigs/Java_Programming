@@ -1,0 +1,38 @@
+package array;
+import java.util.Scanner;
+public class Anagram {
+public static void main(String[] args) {  
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the Strings: -");
+	String str1=sc.nextLine();
+	String str2=sc.nextLine();
+	boolean rs=isAnagram(str1,str2);
+	if(rs)
+		System.out.println("Anagram");
+	else
+		System.out.println("not");
+}
+static boolean	isAnagram(String str1, String str2) {
+	int c1[]=countAlpha(str1);
+	int c2[]=countAlpha(str2);
+	for (int i = 0; i < 26; i++) {
+		if(c1[i]!=c2[i])
+			return false;
+	}
+	return true;
+}
+	static int[] countAlpha(String str) {
+	char a[]=str.toCharArray();
+		int count[]=new int[26];
+
+for (int i = 0; i < a.length-1; i++) {
+	if(a[i]<='A'&&a[i]<='Z') {
+		count[a[i]-65]++;
+	}
+	else if(a[i]<='a'&&a[i]<='a') {
+		count[a[i]-97]++;
+	}
+}
+return count;
+}	
+}
